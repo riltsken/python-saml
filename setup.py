@@ -8,7 +8,7 @@ BASE_DIR = path.abspath(path.dirname(__file__))
 
 # Navigate, import, and retrieve the version of the project.
 _imp = get_importer(path.join(BASE_DIR, 'src', 'saml'))
-meta = _imp.find_module('meta').load_module()
+meta = _imp.find_module('meta').load_module('meta')
 
 setup(
     name='saml',
